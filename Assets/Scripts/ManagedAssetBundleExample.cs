@@ -21,7 +21,7 @@ public class ManagedAssetBundleExample : MonoBehaviour
     {
         if (GUI.Button(new Rect(0, 0, 128, 128), "Download bundle"))
         {
-            bundle = AssetBundleManager.getAssetBundle(url, version);
+            bundle = AssetBundleManager_.getAssetBundle(url, version);
             if (!bundle)
             { 
                 StartCoroutine(DownloadAB());
@@ -31,13 +31,13 @@ public class ManagedAssetBundleExample : MonoBehaviour
 
     IEnumerator DownloadAB()
     {
-        yield return StartCoroutine(AssetBundleManager.downloadAssetBundle(url, version));
-        bundle = AssetBundleManager.getAssetBundle(url, version);
+        yield return StartCoroutine(AssetBundleManager_.downloadAssetBundle(url, version));
+        bundle = AssetBundleManager_.getAssetBundle(url, version);
         Instantiate(bundle.LoadAsset(AssetName));
     }
 
     void OnDisable()
     {
-        AssetBundleManager.Unload(url, version, false);
+        AssetBundleManager_.Unload(url, version, false);
     }
 }

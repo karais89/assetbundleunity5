@@ -190,6 +190,7 @@ GameObject:
   - 114: {fileID: 1343071416}
   - 114: {fileID: 1343071417}
   - 114: {fileID: 1343071418}
+  - 114: {fileID: 1343071419}
   m_Layer: 0
   m_Name: AssetBundle
   m_TagString: Untagged
@@ -272,8 +273,25 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343071412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 065f2d8134dbcb04591b859b517fd9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BundleURL: AssetBundles/mycube.unity3d
+  AssetName: MyCube.prefab
+  version: 1
+--- !u!114 &1343071419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343071412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02646665af4863b4293181d4d4e182eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BundleURL: AssetBundles/mycube.unity3d
+  AssetName: MyCube
+  version: 1

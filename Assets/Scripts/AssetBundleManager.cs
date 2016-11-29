@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-public static class AssetBundleManager
+public static class AssetBundleManager_
 {
     // AssetBundle 참조, URL 및 버전이 있는 클래스
     private class AssetBundleRef
@@ -22,7 +22,7 @@ public static class AssetBundleManager
     // A dictionary to hold the AssetBundle references
     static private Dictionary<string, AssetBundleRef> dictAssetBundleRefs;
 
-    static AssetBundleManager()
+    static AssetBundleManager_()
     {
         dictAssetBundleRefs = new Dictionary<string, AssetBundleRef>();
     }
