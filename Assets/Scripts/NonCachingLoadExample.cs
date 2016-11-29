@@ -12,8 +12,7 @@ class NonCachingLoadExample : MonoBehaviour
     IEnumerator Start()
     {
         string url = string.Format(PRE_URL_FORMAT, Application.dataPath, BundleURL);
-        Debug.Log(url);
-
+        
         // Download the file from the URL. It will not be saved in the Cache
         using (WWW www = new WWW(url))
         {
